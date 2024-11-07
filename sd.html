@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ticket Management Form</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    .form-container p {
+      margin-bottom: 20px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      font-size: 16px;
+      color: #555;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    .form-container input[type="text"]:focus,
+    .form-container input[type="number"]:focus {
+      outline: none;
+      border-color: #a3d2ff;
+      background-color: #fff;
+    }
+
+    .form-container input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .form-container input[type="submit"]:active {
+      background-color: #003f7f;
+    }
+
+    .form-container .actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .form-container .actions input[type="submit"] {
+      width: 48%;
+    }
+
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 20px;
+      }
+
+      .form-container h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="form-container">
+  <h2>Movie Ticket Management</h2>
+  <form method="POST" action="insert.php">
+    <p>
+      <label for="ticket_id">TICKET ID</label>
+      <input type="text" name="ticket_id" id="ticket_id" required>
+    </p>
+    <p>
+      <label for="movie_name">MOVIE NAME</label>
+      <input type="text" name="movie_name" id="movie_name">
+    </p>
+    <p>
+      <label for="customer_name">CUSTOMER NAME</label>
+      <input type="text" name="customer_name" id="customer_name">
+    </p>
+    <p>
+      <label for="seat_no">SEAT NUMBER</label>
+      <input type="text" name="seat_no" id="seat_no">
+    </p>
+    <p>
+      <label for="price">PRICE</label>
+      <input type="number" name="price" id="price">
+    </p>
+    <div class="actions">
+      <input type="submit" name="action" value="Insert">
+      <input type="submit" name="action" value="Update">
+      <input type="submit" name="action" value="Delete">
+    </div>
+    <p style="text-align: center; margin-top: 15px;">
+      <input type="submit" name="action" value="View">
+    </p>
+  </form>
+</div>
+</body>
+</html>

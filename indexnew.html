@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BookMyShow: Your one-stop platform for booking tickets to movies, events, plays, and more.">
+  <title>BookMyShow - Movies, Events, Plays, Sports</title>
+  <link rel="stylesheet" href="stylesnew.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scriptnew.js"></script>
+</head>
+<body>
+<header>
+  <h1>Welcome to BookMyShow</h1>
+  <nav>
+    <ul>
+      <li><a href="#movies">Movies</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#plays">Plays</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="offersnew.html">Offers</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="download.jpeg" height="168" width="300"/>
+  <p>One platform that unites all movie-goers and event enthusiasts.</p>
+</section>
+
+<section id="movies">
+  <h2>Movies</h2>
+  <div class="movie-list">
+    <article class="movie">
+      <h3>Movie Title 1</h3>
+      <p><strong>Showtime:</strong> 6:00 PM</p>
+      <p><strong>Location:</strong> ABC Cinema</p>
+    </article>
+
+    <article class="movie">
+      <h3>Movie Title 2</h3>
+      <p><strong>Showtime:</strong> 8:00 PM</p>
+      <p><strong>Location:</strong> XYZ Cinema</p>
+    </article>
+  </div>
+</section>
+
+<section id="events">
+  <h2>Events</h2>
+  <div class="event-list">
+    <article class="event">
+      <h3>Event Title 1</h3>
+      <p><strong>Date:</strong> August 1, 2024</p>
+      <p><strong>Location:</strong> City Hall</p>
+    </article>
+
+    <article class="event">
+      <h3>Event Title 2</h3>
+      <p><strong>Date:</strong> August 5, 2024</p>
+      <p><strong>Location:</strong> Downtown Arena</p>
+    </article>
+  </div>
+</section>
+
+<section id="plays">
+  <h2>Plays</h2>
+  <div class="play-list">
+    <article class="play">
+      <h3>Play Title 1</h3>
+      <p><strong>Date:</strong> August 10, 2024</p>
+      <p><strong>Location:</strong> Grand Theater</p>
+    </article>
+
+    <article class="play">
+      <h3>Play Title 2</h3>
+      <p><strong>Date:</strong> August 15, 2024</p>
+      <p><strong>Location:</strong> Little Theater</p>
+    </article>
+  </div>
+</section>
+
+<section id="sports">
+  <h2>Sports</h2>
+  <div class="sport-list">
+    <article class="sport">
+      <h3>Sport Event 1</h3>
+      <p><strong>Date:</strong> August 20, 2024</p>
+      <p><strong>Location:</strong> National Stadium</p>
+    </article>
+
+    <article class="sport">
+      <h3>Sport Event 2</h3>
+      <p><strong>Date:</strong> August 25, 2024</p>
+      <p><strong>Location:</strong> Sports Complex</p>
+    </article>
+  </div>
+</section>
+
+<section class="streaming">
+  <h2>Streaming Right Now!</h2>
+  <table>
+    <caption>Currently Available Movies</caption>
+    <thead>
+    <tr>
+      <th>Movie</th>
+      <th>Timings</th>
+      <th>Locations</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Deadpool</td>
+      <td>All day</td>
+      <td>PVR, INOX</td>
+    </tr>
+    <tr>
+      <td>Inception</td>
+      <td>9-11 AM, 6-8 PM</td>
+      <td>PVR, INOX</td>
+    </tr>
+    <tr>
+      <td>Avatar</td>
+      <td>9-11 PM</td>
+      <td>PVR only</td>
+    </tr>
+    <tr>
+      <td>Avengers</td>
+      <td>9-11 PM</td>
+      <td>PVR only</td>
+    </tr>
+    </tbody>
+  </table>
+  <form>
+    <label for="movie">Choose your desired movie:</label>
+    <select name="movie" id="movie">
+      <option value="deadpool">Deadpool</option>
+      <option value="Inception">Inception</option>
+      <option value="Avatar">Avatar</option>
+      <option value="Avengers">Avengers</option>
+    </select>
+  </form>
+  <br><hr>
+  <p><a href="search.php">Search any movie you want to BOOK!!</a></p>
+  <p><a href="book.php">OR Click here to Start booking</a></p>
+
+</section>
+
+<section class="notifications">
+  <h2>Notifications!</h2>
+  <p id="demo">New Vijay movie coming to theaters soon!</p>
+  <button type="button" onclick="notifyUser()">Notify me ASAP!</button>
+  <p onmouseover="mouseoverEvent()">Concert tickets will be out soon! (Keep cursor over me to see details)</p>
+</section>
+
+<footer>
+  <p>© 2024 BookMyShow. All rights reserved.</p>
+  <p><a href="https://in.bookmyshow.com" target="_blank">Visit BookMyShow</a></p>
+  <p><a href="offersnew.html">Check Latest Offers</a></p>
+</footer>
+
+<script src="scriptnew.js"></script>
+</body>
+</html>
